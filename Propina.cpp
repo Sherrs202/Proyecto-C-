@@ -1,8 +1,5 @@
-class Propina {
-public:
-    double calcular(double porcentaje, int subtotal) {
-        return (porcentaje / 100.0) * subtotal;
-    }
+#include "Propina.h"
 
-};
-
+double Propina::calcular(double porcentaje, double subtotal) {
+    return subtotal * (porcentaje / 100.0);
+}
