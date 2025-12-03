@@ -1,21 +1,18 @@
-#include <string>
-using namespace std;
+#include "Bebida.h"
+#include <iostream>
+using std::cout;
+using std::endl;
 
-class Bebida {
-private:
-    string nombre;
-    string tipo;
-    int precio;
+Bebida::Bebida() : Producto(), tipo("") {}
 
-public:
-    // ===== CONSTRUCTOR =====
-    Bebida(string n, string t, int p) {
-        nombre = n;
-        tipo = t;
-        precio = p;
-    }
+Bebida::Bebida(const string& nombre, double precio, const string& tipo)
+    : Producto(nombre, precio), tipo(tipo) {}
 
-    string getNombre() const { return nombre; }
-    string getTipo() const { return tipo; }
-    int getPrecio() const { return precio; }
-};
+string Bebida::getTipo() const { return tipo; }
+void Bebida::setTipo(const string& t) { tipo = t; }
+
+void Bebida::mostrar() const {
+    cout << "Bebida: " << nombre
+         << " | Tipo: " << tipo
+         << " | Precio: $" << precio << endl;
+}
