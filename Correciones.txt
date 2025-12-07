@@ -1,0 +1,3 @@
+Profe me podría checar el UML que ya lo cambie porque las flechas antes se confundían y ahora ya tiene relación con mi codigo el UML
+
+El Readme ya esta completo con como se corre y espera que haga el usuario me podría checar eso porfa 
